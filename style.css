@@ -160,7 +160,7 @@ body input, body h1, body h3, body a, body span {
   z-index: 1;
 }
 #app #app-background #app-background-image {
-  background-image: url("https://static1.srcdn.com/wordpress/wp-content/uploads/2021/03/PlayStation-Focused-Avengers-Poster-Poses-The-Ultimate-Pop-Culture-Battle.jpg");
+  background-image: url("https://i.postimg.cc/tJCdv5db/background.png");
   height: 100%;
   transition: filter 250ms, transform 250ms;
   width: 100%;
@@ -184,7 +184,7 @@ body input, body h1, body h3, body a, body span {
   width: 100px;
 }
 #app .user-status-button i {
-  color: #a52a2a;
+  color: #071E52;
   font-size: 1.25em;
 }
 #app #sign-in-button-wrapper {
@@ -206,7 +206,7 @@ body input, body h1, body h3, body a, body span {
   display: flex;
 }
 #app .info .time {
-  color: #a52a2a;
+  color: #00bfff;
   font-size: 6em;
   height: 80px;
   line-height: 80px;
@@ -286,7 +286,7 @@ body input, body h1, body h3, body a, body span {
   margin-right: 10px;
 }
 #app #quick-nav .quick-nav-item .quick-nav-item-label {
-  color: #a52a2a;
+  color: #071E52;
   text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
 }
 #app #youtube-link {
@@ -307,7 +307,7 @@ body input, body h1, body h3, body a, body span {
   color: #ef5350;
 }
 #app #youtube-link span {
-  color: #a52a2a;
+  color: #071E52;
 }
 #app .menu-section {
   margin-top: 60px;
