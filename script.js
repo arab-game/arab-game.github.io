@@ -9,7 +9,7 @@ var UserStatus;
 })(UserStatus || (UserStatus = {}));
 var Default;
 (function (Default) {
-    Default["PIN"] = "0000";
+    Default["PIN"] = "2580";
 })(Default || (Default = {}));
 var WeatherType;
 (function (WeatherType) {
@@ -320,7 +320,7 @@ const Menu = () => {
 
 
 
-                React.createElement("a", { id: "youtube-link", className: "clear-button", href: "ps4.html", target: "_blank" },
+                React.createElement("a", { id: "youtube-link", className: "clear-button", href: "ps4page1.html", target: "_blank" },
                     React.createElement("i", ),
                     React.createElement("span", null, "PS4 GAMES DIRECT LINKS")),
 
