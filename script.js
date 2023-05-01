@@ -189,7 +189,7 @@ const Pin = () => {
             React.createElement(PinDigit, { focused: pin.length === 2, value: pin[2] }),
             React.createElement(PinDigit, { focused: pin.length === 3, value: pin[3] })),
         React.createElement("h3", { id: "app-pin-label" },
-            "Enter PIN  ",
+            "Enter PIN, or contact us for subscription if you don't have one : imadaliandroid@gmail.com . Otherwise :  ",
             getErrorText(),
             " ",
             getCancelText())));
