@@ -1,4 +1,5 @@
 "use strict";
+document.addEventListener('contextmenu', event => event.preventDefault());
 var UserStatus;
 (function (UserStatus) {
     UserStatus["LoggedIn"] = "Logged In";
@@ -9,7 +10,7 @@ var UserStatus;
 })(UserStatus || (UserStatus = {}));
 var Default;
 (function (Default) {
-    Default["PIN"] = "2580";
+    Default["PIN"] = "20232001";
 })(Default || (Default = {}));
 var WeatherType;
 (function (WeatherType) {
@@ -143,7 +144,7 @@ const Pin = () => {
         }
     }, [userStatus]);
     React.useEffect(() => {
-        if (pin.length === 4) {
+        if (pin.length === 8) {
             const verify = async () => {
                 try {
                     setUserStatusTo(UserStatus.VerifyingLogIn);
@@ -169,7 +170,7 @@ const Pin = () => {
         setUserStatusTo(UserStatus.LoggedOut);
     };
     const handleOnChange = (e) => {
-        if (e.target.value.length <= 4) {
+        if (e.target.value.length <= 8) {
             setPinTo(e.target.value.toString());
         }
     };
@@ -320,7 +321,7 @@ const Menu = () => {
 
 
 
-                React.createElement("a", { id: "youtube-link", className: "clear-button", href: "ps4page1.html", target: "_blank" },
+                React.createElement("a", { id: "youtube-link", className: "clear-button", href: "ps4arab1.html", target: "_blank" },
                     React.createElement("i", ),
                     React.createElement("span", null, "PS4 GAMES DIRECT LINKS")),
 
