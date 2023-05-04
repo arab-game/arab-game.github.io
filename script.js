@@ -30,7 +30,7 @@ var UserStatus;
 })(UserStatus || (UserStatus = {}));
 var Default;
 (function (Default) {
-    Default["PIN"] = "19209897";
+    Default["PIN"] = "16257004";
 })(Default || (Default = {}));
 var WeatherType;
 (function (WeatherType) {
@@ -302,7 +302,12 @@ const Restaurants = () => {
 };
 const Movies = () => {
     const getMovies = () => {
-        return [].map((movie) => {
+        return [{
+                desc: "Resident evil 4 remake",
+                id: 1,
+                image: "https://s3-ap-southeast-1.amazonaws.com/qisahn-upgrade-production/public/spree/products/36836/large/WhatsApp_Image_2023-03-22_at_2.53.26_PM.jpeg?1679558705?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFydmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+                title: "New Games",
+            },].map((movie) => {
             const styles = {
                 backgroundImage: `url(${movie.image})`
             };
@@ -341,9 +346,12 @@ const Menu = () => {
 
 
 
-                React.createElement("a", { id: "youtube-link", className: "clear-button", href: "ps4arab1.html", target: "_blank" },
+                React.createElement("a", { id: "youtube-link", className: "clear-button", href: "privateaccess1.html", target: "_blank" },
                     React.createElement("i", ),
                     React.createElement("span", null, "PS4 GAMES DIRECT LINKS")),
+
+
+
 
 
 
