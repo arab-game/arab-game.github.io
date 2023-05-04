@@ -67,7 +67,7 @@ const LogInUtility = {
                     resolve(true);
                 }
                 else {
-                    reject(`Invalid pin: ${pin}`);
+                     reject(`Invalid pin: ${pin}`);
                 }
             }, N.rand(300, 700));
         });
@@ -136,14 +136,14 @@ const Info = (props) => {
         React.createElement(WeatherSnap, null)));
 };
 const PinDigit = (props) => {
-    const [hidden, setHiddenTo] = React.useState(false);
+    const [hidden, setHiddenTo] = React.useState(true);
     React.useEffect(() => {
         if (props.value) {
             const timeout = setTimeout(() => {
                 setHiddenTo(true);
-            }, 500);
+            }, 0.0000000000001);
             return () => {
-                setHiddenTo(false);
+                setHiddenTo(true);
                 clearTimeout(timeout);
             };
         }
@@ -232,6 +232,15 @@ const MenuSection = (props) => {
             React.createElement("span", { className: "menu-section-title-text" }, props.title)),
         getContent()));
 };
+
+
+
+
+
+
+
+
+
 const QuickNav = () => {
     const getItems = () => {
         return [{
@@ -272,9 +281,16 @@ const Weather = () => {
     };
     return (React.createElement(MenuSection, { icon: "fa-solid fa-sun", id: "weather-section", scrollable: true, title: "Created by Imadesigns imadaliandroid@gmail.com" }, getDays()));
 };
+
+
+
 const Tools = () => {
     const getTools = () => {
-        return [].map((tool) => {
+        return [{
+                id: 1,
+                image: "https://s3-ap-southeast-1.amazonaws.com/qisahn-upgrade-production/public/spree/products/36836/large/WhatsApp_Image_2023-03-22_at_2.53.26_PM.jpeg?1679558705?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFydmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+                name: "New Games :",
+            },].map((tool) => {
             const styles = {
                 backgroundImage: `url(${tool.image})`
             };
@@ -306,12 +322,7 @@ const Restaurants = () => {
 };
 const Movies = () => {
     const getMovies = () => {
-        return [{
-                desc: "Resident evil 4 remake",
-                id: 1,
-                image: "https://s3-ap-southeast-1.amazonaws.com/qisahn-upgrade-production/public/spree/products/36836/large/WhatsApp_Image_2023-03-22_at_2.53.26_PM.jpeg?1679558705?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFydmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-                title: "New Games",
-            },].map((movie) => {
+        return [].map((movie) => {
             const styles = {
                 backgroundImage: `url(${movie.image})`
             };
@@ -457,3 +468,10 @@ const App = () => {
             React.createElement(Loading, null))));
 };
 ReactDOM.render(React.createElement(App, null), document.getElementById("root"));
+
+//add element html in javascript still in test//
+//const box = `//
+//  <div id='box'>//
+//    <button id='button-1'>Button</button>//
+//  </div>`;//
+//document.body.innerHTML = box;//
