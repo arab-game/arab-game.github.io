@@ -1,4 +1,7 @@
 "use strict";
+
+
+
 document.addEventListener('contextmenu', event => event.preventDefault());
 
 // Disable right-click
@@ -254,7 +257,7 @@ const QuickNav = () => {
                 label: "Movies"
             }, {
                 id: 4,
-                label: "Apps & Games"
+                label: "Apps"
             }].map((item) => {
             return (React.createElement("div", { key: item.id, className: "quick-nav-item clear-button" },
                 React.createElement("span", { className: "quick-nav-item-label" }, item.label)));
@@ -289,7 +292,7 @@ const Tools = () => {
         return [{
                 id: 1,
                 image: "https://s3-ap-southeast-1.amazonaws.com/qisahn-upgrade-production/public/spree/products/36836/large/WhatsApp_Image_2023-03-22_at_2.53.26_PM.jpeg?1679558705?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFydmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-                name: "New Games :",
+                name: "New Games : ", 
             },].map((tool) => {
             const styles = {
                 backgroundImage: `url(${tool.image})`
